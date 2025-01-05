@@ -1,4 +1,9 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .hide-mobile {
     display: none;
@@ -8,6 +13,7 @@ body {
     background-color: #FFFBF3;
     margin: 0;
     font-family: 'Inter';
+    overflow-x: hidden;
 }
 
 .wrap {
