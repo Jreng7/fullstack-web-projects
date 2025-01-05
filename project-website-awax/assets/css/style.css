@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  color: aliceblue;
+}
+
+header {
+  height: 100px;
+  background-color: black;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  width: 100px;
+}
+
+
+.logoimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #b28756;
+}
+
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul, menu li {
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+  gap: 35px;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  height: 100px;
+  border-bottom: 5px solid #000;
+}
+
+.menu li a:hover {
+  border-bottom: 5px solid #b28756;
+}
