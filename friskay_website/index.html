@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Kitty Food</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
@@ -57,21 +57,18 @@
             </div>
         </div>
     </div>
-
-    <script>
-
-        const menu = document.querySelector('nav ul');
-        const menuBtn = document.querySelector('.menu-open');
-        const closeBtn = document.querySelector('.menu-close');
-
-        menuBtn.addEventListener('click', () => {
-            menu.classList.add('open')
-        })
-
-        closeBtn.addEventListener('click', () => {
-            menu.classList.remove('open')
-        })
-
-    </script>
+    <footer>
+        <p>
+          <span>&copy; 2025, By Josué Ribeiro</span>
+          <a href="https://www.linkedin.com/in/jribeirow/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+          <a href="https://github.com/Jreng7" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+        
+        <p>
+          <span>Inspirado pelo incrível trabalho de</span>
+          <a href="https://www.youtube.com/@DesignCourse" target="_blank" rel="noopener noreferrer">DesignCourse</a>
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

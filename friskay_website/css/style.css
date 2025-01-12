@@ -132,6 +132,30 @@ a.primary-cta {
     }
 }
 
+
+footer {
+    width: 100%;
+    background-color: #f8f9fa; /* Cor de fundo */
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno */
+    color: #555; /* Cor do texto */
+    border-top: 1px solid #ddd; /* Linha superior */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    margin: 0; /* Remove margens padrão */
+  }
+  
+footer a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 5px; /* Espaçamento entre os links */
+}
+  
+
+footer a:hover {
+    text-decoration: underline; /* Estilo ao passar o mouse */
+}
+
+
 @media (min-width: 798px) {
     .wrap {
         margin: 0 4em;
@@ -177,6 +201,7 @@ a.primary-cta {
             font-size: 1.2rem;
         }
     }
+
 }
 
 @media (min-width: 950px) {
