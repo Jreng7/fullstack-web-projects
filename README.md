@@ -14,6 +14,7 @@ This repository contains multiple web projects developed with various technologi
 - **Spring Boot** 🛠️
 - **Docker** 🐳
 - **REST API** 🔌
+- **Shadcn Ui** 📱
 - **Next.js** ⚡
 - **AWS** ☁️
 - **SPA** 📱
