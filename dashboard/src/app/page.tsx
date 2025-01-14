@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CircleCheckBig, DollarSign, Users } from "lucide-react";
+import { Boxes, CircleCheckBig, DollarSign, Users } from "lucide-react";
+import { ChartOverview } from "@/components/chart";
 
 
 export default function Home() {
@@ -62,19 +63,23 @@ export default function Home() {
           <CardHeader>
             <div className="flex items-center justify-center mb-2">
               <CardTitle className="text-gray-800 select-none">
-                Pedidos hoje
+                Produtos no Estoque
               </CardTitle>
-              <CircleCheckBig className="ml-auto w-4 h-4"/>
+              <Boxes className="ml-auto w-4 h-4"/>
             </div>
             <CardDescription>
-              Total de pedidos hoje
+              Total de produtos no estoque
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <p className="text-base sm:text-lg font-bold">59</p>
+            <p className="text-base sm:text-lg font-bold">234</p>
           </CardContent>
         </Card>
 
+      </section>
+
+      <section className="mt-4 flex flex-col md:flex-row gap-4">
+        <ChartOverview />
       </section>
 
     </main>
