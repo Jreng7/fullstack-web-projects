@@ -2,7 +2,7 @@
 
 export function Footer(){
   return (
-    <footer className="items-center justify-center bg-zinc-200 text-center p-4">
+    <footer className="mt-auto items-center justify-center bg-zinc-100 text-center p-5">
       <p>
         <span className="mr-1">&copy; 2025 - By Josué Ribeiro </span>
         <a href="https://www.linkedin.com/in/jribeirow/" target="_blank" rel="noopener noreferrer" className="mr-1 text-blue-500 hover:underline">LinkedIn</a> |
@@ -10,7 +10,7 @@ export function Footer(){
       </p>
       <p>
         <span>Inspirado pelo incrível trabalho de </span>
-        <a href="https://www.youtube.com/@DesignCourse" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">DesignCourse</a>
+        <a href="https://www.youtube.com/@Sujeitoprogramador" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Sujeitoprogramador</a>
       </p>
     </footer>
   );
