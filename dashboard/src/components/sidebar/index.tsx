@@ -6,9 +6,9 @@ import { TooltipProvider, Tooltip, TooltipContent, TooltipTrigger } from '../ui/
 
 export function Sidebar(){
   return (
-    <div className="flex w-full flex-col bg-muted/40">
+    <div>
 
-       <aside className='fixed inset-y-0 left-0 z-10 hidden w-14 border-r bg-background sm:flex'>
+       <aside className='fixed inset-y-0 left-0 z-10 hidden w-14 border-r bg-zinc-200 sm:flex'>
         <nav className='flex flex-col items-center gap-4 px-2 py-5'>
 
           <TooltipProvider>
@@ -98,7 +98,7 @@ export function Sidebar(){
 
       <div className="sm:hidden flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
         <header className='
-        sticky top-0 z-30 flex h-14 items-center px-4 border-b bg-background
+        sticky top-0 z-30 flex h-14 items-center px-4 border-b bg-zinc-50
         gap-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6
         '>
           <Sheet>
