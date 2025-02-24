@@ -26,24 +26,26 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   color: var(--claro);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-}
-
-header {
-  position: fixed;
-  max-width: 1200px;
-  top: 0;
-  width: 100%;
-  background-color: #4f46e5;
-  border: solid 1px green;
+  padding: 0 15px;
 }
 
 header .navegacao {
-  background-color: aqua;
-  border: solid 1px green;
+  background-color: rgba(15, 23, 42, 0.8);
+  position: fixed;
+  width: 100%;
+  max-width: 1280px;
+  top: 0;
+  z-index: 100;
 }
