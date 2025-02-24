@@ -56,4 +56,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   list-style: none;
   gap: 3.5rem;
+
+  li a {
+    text-decoration: none;
+  }
 }
