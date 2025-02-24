@@ -1,3 +1,6 @@
+import 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -20,4 +23,27 @@ html {
 
 body {
   background-color: var(--escuro);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--claro);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  max-width: 1200px;
+  top: 0;
+  width: 100%;
+  background-color: #4f46e5;
+  border: solid 1px green;
+}
+
+header .navegacao {
+  background-color: aqua;
+  border: solid 1px green;
 }

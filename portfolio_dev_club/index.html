@@ -8,94 +8,97 @@
 </head>
 <body>
 
-   
-  <!-- HEADER -->
-  <header>
-    <nav class="navegacao">
-      <ul class="menu">
-        <li><a href="#inicio"></a>Início</li>
-        <li><a href="#sobre"></a>Sobre</li>
-        <li><a href="#projetos"></a>Projetos</li>
-        <li><a href="#contato"></a>Contatos</li>
-      </ul>
-    </nav>
-  </header>
+  <div class="wrapper">
+       
+    <!-- HEADER -->
+    <header>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li><a href="#inicio"></a>Início</li>
+          <li><a href="#sobre"></a>Sobre</li>
+          <li><a href="#projetos"></a>Projetos</li>
+          <li><a href="#contato"></a>Contatos</li>
+        </ul>
+      </nav>
+    </header>
 
 
-  <!-- MAIN -->
-  <main>
+    <!-- MAIN -->
+    <main>
 
-    <!-- INICIO -->
-    <section id="inicio" class="inicio">
-      <div>
-        <img src="img/astronauta.jpg" alt="dashboard" class="foto-perfil">
-        <h1>Josué Ribeiro</h1>
-        <p>Desenvolvedor Front End</p>
+      <!-- INICIO -->
+      <section id="inicio" class="inicio">
+        <div>
+          <img src="img/astronauta.jpg" alt="dashboard" class="foto-perfil">
+          <h1>Josué Ribeiro</h1>
+          <p>Desenvolvedor Front End</p>
+        </div>
+      </section>
+    
+      <!-- SOBRE -->
+      <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-divCaixa">
+          <p class="sobre-paragrafo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Quam voluptatum cum maiores accusamus repudiandae esse, rerum ab velit aliquid? 
+            Ut dicta veritatis ducimus ipsa natus!
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" class="projetos">
+        <h2 class="projetos-titulos">Meus projetos</h2>
+
+        <div class="projetos-caixa">
+
+          <div class="projetos-card">
+            <img src="img/dashboard.png" alt="Projeto 1" class="projeto1-img">
+            <h3 class="projetos-titulo-h3">Dashboard Infográfico</h3>
+            <p class="projetos-paragrafo">Dashboard construído com Next.js, Tailwind CSS e Shadcn</p>
+          </div>
+          
+          <div class="projetos-card">
+            <img src="img/friskay.png" alt="Projeto 1" class="projeto1-img">
+            <h3 class="projetos-titulo-h3">Friskay</h3>
+            <p class="projetos-paragrafo">Webpage - html, css e js</p>
+          </div>
+
+          <div class="projetos-card">
+            <img src="img/dashboard.png" alt="Projeto 1" class="projeto1-img">
+            <h3 class="projetos-titulo-h3">Dashboard Infográfico</h3>
+            <p class="projetos-paragrafo">Dashboard construído com Next.js, Tailwind CSS e Shadcn</p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contato" class="contato">
+
+      <div class="form">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form id="formulario" class="contato-formulario">
+          <label for="name">Nome:</label>
+          <input id="name" type="text" placeholder="Digite seu nome">
+          <textarea placeholder="Digite a sua mensagem"></textarea>
+        </form>
       </div>
-    </section>
-  
-    <!-- SOBRE -->
-    <section id="sobre" class="sobre">
-      <h2 class="sobre-titulo">Sobre mim</h2>
-      <div class="sobre-divCaixa">
-        <p class="sobre-paragrafo">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Quam voluptatum cum maiores accusamus repudiandae esse, rerum ab velit aliquid? 
-          Ut dicta veritatis ducimus ipsa natus!
+
+      <div class="footer-end">
+        <p>
+          <span>&copy; 2025 - By Josué Ribeiro</span>
+          <a href="https://www.linkedin.com/in/jribeirow/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+          <a href="https://github.com/Jreng7" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
       </div>
-    </section>
 
-    <!-- PROJETOS -->
-    <section id="projetos" class="projetos">
-      <h2 class="projetos-titulos">Meus projetos</h2>
+    </footer>
+  </div>
 
-      <div class="projetos-caixa">
-
-        <div class="projetos-card">
-          <img src="img/dashboard.png" alt="Projeto 1" class="projeto1-img">
-          <h3 class="projetos-titulo-h3">Dashboard Infográfico</h3>
-          <p class="projetos-paragrafo">Dashboard construído com Next.js, Tailwind CSS e Shadcn</p>
-        </div>
-        
-        <div class="projetos-card">
-          <img src="img/friskay.png" alt="Projeto 1" class="projeto1-img">
-          <h3 class="projetos-titulo-h3">Friskay</h3>
-          <p class="projetos-paragrafo">Webpage - html, css e js</p>
-        </div>
-
-        <div class="projetos-card">
-          <img src="img/dashboard.png" alt="Projeto 1" class="projeto1-img">
-          <h3 class="projetos-titulo-h3">Dashboard Infográfico</h3>
-          <p class="projetos-paragrafo">Dashboard construído com Next.js, Tailwind CSS e Shadcn</p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer id="contato" class="contato">
-
-    <div class="form">
-      <h2 class="contatos-titulo">Contatos</h2>
-      <form id="formulario" class="contato-formulario">
-        <label for="name">Nome:</label>
-        <input id="name" type="text" placeholder="Digite seu nome">
-        <textarea placeholder="Digite a sua mensagem"></textarea>
-      </form>
-    </div>
-
-    <div class="footer-end">
-      <p>
-        <span>&copy; 2025 - By Josué Ribeiro</span>
-        <a href="https://www.linkedin.com/in/jribeirow/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-        <a href="https://github.com/Jreng7" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-    </div>
-
-  </footer>
 
 </body>
 </html>
