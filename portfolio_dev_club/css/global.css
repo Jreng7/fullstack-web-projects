@@ -55,9 +55,22 @@ h1, h2, h3, h4, h5, h6 {
 .menu {
   display: flex;
   list-style: none;
-  gap: 3.5rem;
+  gap: 3.7rem;
+}
 
-  li a {
-    text-decoration: none;
-  }
+.link { text-decoration: none;
+  color: var(--claro);
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  padding: 0.8rem;
+}
+
+.link::after {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: linear-gradient(90deg, var(--primaria), var(--secundaria));
 }
