@@ -27,6 +27,30 @@ body {
   padding: 0;
 }
 
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 0.5rem;  /* Deixa a barra fina */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #e0e0e0; /* Cinza claro */
+  border-radius: 0.5rem;
+}
+
+/* A parte móvel da barra (o "thumb") */
+::-webkit-scrollbar-thumb {
+  background: #a0a0a0; /* Cinza médio */
+  border-radius: 10px;
+}
+
+/* Efeito ao passar o mouse na barra */
+::-webkit-scrollbar-thumb:hover {
+  background: #808080; /* Cinza mais escuro */
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
