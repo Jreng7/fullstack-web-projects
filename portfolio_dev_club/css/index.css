@@ -34,12 +34,17 @@
   margin-top: 0.5rem;
 }
 
-.inicio > p {
+.inicio p {
   color: var(--claro);
   font-size: 1.5rem;
 }
 
 .sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
   padding: 6rem 2rem;
 }
@@ -47,4 +52,18 @@
 .sobre h2 {
   font-size: 3rem;
   font-weight: 900;
+  text-align: center;
+}
+
+.sobre-caixa {
+  padding: 2rem;
+  max-width: 50rem;
+  margin: 2rem auto;
+
+  border: 1px solid var(--vidro);
+  border-radius: 1rem;
+}
+
+.sobre-caixa p {
+  line-height: 1.5rem;
 }
