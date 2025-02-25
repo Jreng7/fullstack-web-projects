@@ -1,0 +1,46 @@
+:root {
+  --primaria: #4f46e5;
+  --secundaria: #7c3aed;
+  --escuro: #0f172a;
+  --maisEscuro: #0a0f1c;
+  --h1-color: #1781e4;
+  --claro: #e2e8f0;
+  --vidro: rgba(255, 255, 255, 0.1);
+}
+
+
+.foto-perfil {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 7px solid var(--vidro);
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 0.7rem;
+}
+
+.inicio h1 {
+  font-size: 2.8rem;
+  color: var(--h1-color);
+  font-weight: 900;
+  margin-bottom: -0.8rem;
+  margin-top: 0.5rem;
+}
+
+.inicio > p {
+  color: var(--claro);
+  font-size: 1.5rem;
+}
+
+.sobre {
+  padding: 6rem 2rem;
+  background-color: #1c324e;
+  border: solid 2px green;
+}
