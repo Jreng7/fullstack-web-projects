@@ -8,7 +8,7 @@
   --vidro: rgba(255, 255, 255, 0.1);
 }
 
-main .header {
+main .home {
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
