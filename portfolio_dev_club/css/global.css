@@ -35,7 +35,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-width: 80rem;   
   margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .navegacao {
@@ -48,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 
   position: fixed;
-  width: 100%;
+  width: 1280px;
   max-width: 80rem;
   top: 0;
   z-index: 100;
@@ -68,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   position: relative;
   padding: 0.5rem;
-}
+} 
 
 .link::after {
   content: '';

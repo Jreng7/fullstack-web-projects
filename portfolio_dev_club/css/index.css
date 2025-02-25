@@ -40,7 +40,11 @@
 }
 
 .sobre {
+  width: 100%;
   padding: 6rem 2rem;
-  background-color: #1c324e;
-  border: solid 2px green;
+}
+
+.sobre h2 {
+  font-size: 3rem;
+  font-weight: 900;
 }
