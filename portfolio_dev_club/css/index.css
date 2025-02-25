@@ -43,6 +43,7 @@ main .header {
   background-clip: text;  /* Versão padrão */
   -webkit-background-clip: text; /* Para navegadores baseados em WebKit (Chrome, Safari) */
   -webkit-text-fill-color: transparent;
+}
 
 .sobre {
   display: flex;
@@ -66,6 +67,8 @@ main .header {
 
   border: 1px solid var(--vidro);
   border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
 }
 
 .sobre-caixa p {
