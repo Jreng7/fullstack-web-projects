@@ -111,5 +111,6 @@ footer {
 }
 
 footer a {
+  text-decoration: none;
   color: rgb(28, 132, 230);
 }
