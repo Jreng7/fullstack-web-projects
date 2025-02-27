@@ -103,14 +103,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  flex-direction: column;
+  padding: 20px 0;
   width: 100%;
   padding: 20px;
-  background-color: beige;
+  background-color: #f8f9fa;
+  color: #555;
+  border-top: solid 1px #ddd;
   margin-top: auto;
 }
 
 footer a {
+  color: #007bff; /* Cor dos links */
   text-decoration: none;
-  color: rgb(28, 132, 230);
+  margin: 0 5px; /* Espaçamento entre os links */
 }
