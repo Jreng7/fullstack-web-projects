@@ -7,17 +7,27 @@
 body {
   background: #222; 
   font-family: "Poppins", serif;
+  overflow-y: hidden;
 } 
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
 
 .card {
   width: 90%;
   max-width: 470px;
+  max-height: 650px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
   margin: 100px auto 0;
   border-radius: 20px;
   padding: 40px 35px;
   text-align: center;
+  flex: 1;
 }
 
 .box-search {
@@ -85,5 +95,21 @@ body {
 }
 
 .col img {
-  
+  width: 40px;
+  margin-right: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  padding: 20px;
+  background-color: beige;
+  margin-top: auto;
+}
+
+footer a {
+  color: rgb(28, 132, 230);
 }
