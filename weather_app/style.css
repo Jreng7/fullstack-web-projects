@@ -53,3 +53,12 @@ body {
 .box-search button img {
   width: 20px;
 }
+
+.clima-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.clima h1 {
+  font-size: 80px;
+}
