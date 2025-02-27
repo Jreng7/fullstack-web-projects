@@ -196,13 +196,22 @@ main .home {
     display: none;
   }
 
-  .home {
+  main > .home {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+
+  .inicio-right {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 8rem;
+  }
+
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
   }
 
   .inicio-left > h1 {
