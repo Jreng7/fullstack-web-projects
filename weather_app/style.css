@@ -2,16 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 'Poppins', sans-serif;
 }
 
 body {
   background: #222; 
-}
+  font-family: "Poppins", serif;
+} 
 
 .card {
   width: 90%;
-  max-width: 450px;
+  max-width: 470px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
   margin: 100px auto 0;
@@ -50,8 +50,8 @@ body {
   cursor: pointer;
 }
 
-.box-search button img {
-  width: 20px;
+.box-search button img{
+  width: 18px;
 }
 
 .clima-icon {
@@ -61,4 +61,16 @@ body {
 
 .clima h1 {
   font-size: 80px;
+  font-weight: 500;
+}
+
+.clima h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.detalhes {
+  display: flex;
+  justify-content: center;
 }
