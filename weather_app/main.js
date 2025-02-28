@@ -7,9 +7,9 @@ const cidadeEstado = document.querySelector('.box-search input')
 const climaTempoIcon = document.querySelector('.clima-icon')
 
 
-async function checarClima(cidadeNome, estadoNome){
+async function checarClima(cidadeNome, estadoNome, pais){
 
-  const response = await fetch(`${apiUrl}${cidadeNome},${estadoNome},BR&appid=${apiKey}`)
+  const response = await fetch(`${apiUrl}${cidadeNome},${estadoNome},${pais}&appid=${apiKey}`)
   let data = await response.json()
 
   document.querySelector('.cidade').innerHTML = data.name + ' -'
@@ -30,6 +30,8 @@ async function checarClima(cidadeNome, estadoNome){
     climaTempoIcon.src = 'images/neblina.png'
   }
 
+  document.querySelector('.clima').style.display = 'block'
+
 }
 
 botaoPesquisa.addEventListener('click', ()  => {
@@ -38,13 +40,14 @@ botaoPesquisa.addEventListener('click', ()  => {
   let partesArrayString = entradaCidade.split(',')
 
   if( partesArrayString.length < 2 ) {
-    alert('Por favor, insira a cidade e o estado no formato: Cidade, UF')
+    alert('Por favor, insira a cidade e o estado no formato: Cidade, UF e o País. Ex: "New York, NY, EUA"')
     return;
   }
 
   let cidadeNome = partesArrayString[0].trim()
   let estadoNome = partesArrayString[1].trim()
+  let pais = partesArrayString[2].trim()
 
-  checarClima(cidadeNome, estadoNome)
+  checarClima(cidadeNome, estadoNome, pais)
 
 })
