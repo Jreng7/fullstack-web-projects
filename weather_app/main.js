@@ -4,6 +4,8 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q='
 
 const botaoPesquisa = document.querySelector('.box-search button')
 const cidadeEstado = document.querySelector('.box-search input')
+const climaTempoIcon = document.querySelector('.clima-icon')
+
 
 async function checarClima(cidadeNome, estadoNome){
 
@@ -15,6 +17,18 @@ async function checarClima(cidadeNome, estadoNome){
   document.querySelector('.umidade').innerHTML = data.main.humidity + '%'
   document.querySelector('.vento').innerHTML = data.wind.speed + ' km/h'
   document.querySelector('.estado').innerHTML = estadoNome
+
+  if( data.weather[0].main == 'Clouds' ){
+    climaTempoIcon.src = 'images/nublado.png'
+  } else if ( data.weather[0].main == 'Clear' ){
+    climaTempoIcon.src = 'images/sol.png'
+  } else if ( data.weather[0].main == 'Rain' ) {
+    climaTempoIcon.src = 'images/chuva.png'
+  } else if ( data.weather[0].main == 'Drizzle' ){
+    climaTempoIcon.src = 'images/chuvisco.png'
+  } else if ( data.weather[0].main == 'Mist' ) {
+    climaTempoIcon.src = 'images/neblina.png'
+  }
 
 }
 
