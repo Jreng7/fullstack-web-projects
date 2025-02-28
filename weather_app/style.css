@@ -70,12 +70,12 @@ body {
 }
 
 .clima h1 {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 500;
 }
 
 .clima h2 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   margin-top: -10px;
 }
@@ -95,12 +95,12 @@ body {
 }
 
 .col img {
-  width: 50px;
+  width: 40px;
   margin-right: 12px;
 }
 
 .umidade, .vento {
-  font-size: 28px;
+  font-size: 25px;
 }
 
 footer {
