@@ -22,7 +22,7 @@ body {
   max-width: 470px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   border-radius: 20px;
   padding: 40px 35px;
   text-align: center;
@@ -109,14 +109,17 @@ body {
 }
 
 section {
-  background: #007bff;
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
   color: #ddd;
-  border-radius: 18px;
+  
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
 }
 
 section p {
@@ -131,13 +134,13 @@ footer {
   flex-direction: column;
   padding: 20px 0;
   width: 100%;
-  padding: 12px 0;
+  padding: 10px 0;
   background-color: #f8f9fa;
   color: #555;
   border-top: solid 1px #ddd;
   margin-top: auto;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 footer a {
