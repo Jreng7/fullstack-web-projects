@@ -10,7 +10,29 @@ const climaTempoIcon = document.querySelector('.clima-icon')
 async function checarClima(cidadeNome, estadoNome, pais){
 
   const response = await fetch(`${apiUrl}${cidadeNome},${estadoNome},${pais}&appid=${apiKey}`)
-  let data = await response.json()
+
+  if ( response.status == 404 ){
+
+    document.querySelector('.error').style.display = 'block'
+    document.querySelector('.clima').style.display = 'none'
+
+  } else {
+
+    let data = await response.json()
+
+    if( data.weather[0].main == 'Clouds' ){
+      climaTempoIcon.src = 'images/nublado.png'
+    } else if ( data.weather[0].main == 'Clear' ){
+      climaTempoIcon.src = 'images/sol.png'
+    } else if ( data.weather[0].main == 'Rain' ) {
+      climaTempoIcon.src = 'images/chuva.png'
+    } else if ( data.weather[0].main == 'Drizzle' ){
+      climaTempoIcon.src = 'images/chuvisco.png'
+    } else if ( data.weather[0].main == 'Mist' ) {
+      climaTempoIcon.src = 'images/neblina.png'
+    }
+  }
+
 
   document.querySelector('.cidade').innerHTML = data.name + ' -'
   document.querySelector('.temperatura').innerHTML = Math.round(data.main.temp) + ' °C'
@@ -18,31 +40,15 @@ async function checarClima(cidadeNome, estadoNome, pais){
   document.querySelector('.vento').innerHTML = data.wind.speed + ' km/h'
   document.querySelector('.estado').innerHTML = estadoNome
 
-  if( data.weather[0].main == 'Clouds' ){
-    climaTempoIcon.src = 'images/nublado.png'
-  } else if ( data.weather[0].main == 'Clear' ){
-    climaTempoIcon.src = 'images/sol.png'
-  } else if ( data.weather[0].main == 'Rain' ) {
-    climaTempoIcon.src = 'images/chuva.png'
-  } else if ( data.weather[0].main == 'Drizzle' ){
-    climaTempoIcon.src = 'images/chuvisco.png'
-  } else if ( data.weather[0].main == 'Mist' ) {
-    climaTempoIcon.src = 'images/neblina.png'
-  }
-
   document.querySelector('.clima').style.display = 'block'
 
 }
+
 
 botaoPesquisa.addEventListener('click', ()  => {
 
   let entradaCidade = cidadeEstado.value.trim()
   let partesArrayString = entradaCidade.split(',')
-
-  if( partesArrayString.length < 2 ) {
-    alert('Por favor, insira a cidade e o estado no formato: Cidade, UF e o País. Ex: "New York, NY, EUA"')
-    return;
-  }
 
   let cidadeNome = partesArrayString[0].trim()
   let estadoNome = partesArrayString[1].trim()

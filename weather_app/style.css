@@ -149,6 +149,13 @@ footer a {
   margin: 0 4px; 
 }
 
-.clima {
+.clima, .error {
   display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-weight: 700;
 }
