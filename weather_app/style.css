@@ -103,6 +103,13 @@ body {
   font-size: 25px;
 }
 
+.cidade-estado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
 footer {
   display: flex;
   align-items: center;
