@@ -20,7 +20,7 @@ body {
 .card {
   width: 90%;
   max-width: 470px;
-  max-height: 650px;
+  max-height: 620px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
   margin: 100px auto 0;
@@ -99,6 +99,8 @@ body {
   margin-right: 10px;
 }
 
+
+
 footer {
   display: flex;
   align-items: center;
@@ -106,15 +108,17 @@ footer {
   flex-direction: column;
   padding: 20px 0;
   width: 100%;
-  padding: 20px;
+  padding: 12px 0;
   background-color: #f8f9fa;
   color: #555;
   border-top: solid 1px #ddd;
   margin-top: auto;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 footer a {
   color: #007bff; /* Cor dos links */
   text-decoration: none;
-  margin: 0 5px; /* Espaçamento entre os links */
+  margin: 0 4px; /* Espaçamento entre os links */
 }
