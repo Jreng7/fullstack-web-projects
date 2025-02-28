@@ -109,11 +109,9 @@ body {
 }
 
 section {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+  width: 90%;
+  max-width: 470px;
+  margin-top: 25px;
   color: #ddd;
   
   border: solid 1px rgba(255, 255, 255, 0.1);
