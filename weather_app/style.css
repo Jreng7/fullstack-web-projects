@@ -99,8 +99,6 @@ body {
   margin-right: 10px;
 }
 
-
-
 footer {
   display: flex;
   align-items: center;
@@ -118,7 +116,11 @@ footer {
 }
 
 footer a {
-  color: #007bff; /* Cor dos links */
+  color: #007bff; 
   text-decoration: none;
-  margin: 0 4px; /* Espaçamento entre os links */
+  margin: 0 4px; 
+}
+
+.umidade, .vento {
+  
 }
