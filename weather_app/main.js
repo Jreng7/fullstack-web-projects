@@ -10,6 +10,8 @@ async function checarClima(cidadeNome, estadoNome, pais){
   
   const response = await fetch(`${apiUrl}${cidadeNome},${estadoNome},${pais}&appid=${apiKey}`)
 
+  document.querySelector('.error').style.display = 'none'
+
   if (response.status == 404) {
 
     document.querySelector('.error').style.display = 'block'
