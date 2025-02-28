@@ -7,11 +7,11 @@ async function checarClima(){
   const response = await fetch(apiUrl + `&appid=${apiKey}`)
   let data = await response.json()
 
-  console.log(data)
+  document.querySelector('.cidade').innerHTML = data.name 
+  document.querySelector('.temperatura').innerHTML = data.main.temp + ' °C'
+  document.querySelector('.umidade').innerHTML = data.main.humidity + '%'
+  document.querySelector('.vento').innerHTML = data.wind.speed + '  km/h'
 
-  document.querySelector('.cidade').innerHTML = data.name
-
-  
 }
 
 checarClima()

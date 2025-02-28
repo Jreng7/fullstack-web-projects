@@ -20,7 +20,7 @@ body {
 .card {
   width: 90%;
   max-width: 470px;
-  max-height: 620px;
+  max-height: 630px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
   margin: 100px auto 0;
@@ -95,8 +95,12 @@ body {
 }
 
 .col img {
-  width: 40px;
-  margin-right: 10px;
+  width: 50px;
+  margin-right: 12px;
+}
+
+.umidade, .vento {
+  font-size: 28px;
 }
 
 footer {
