@@ -31,7 +31,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .box-search input {
@@ -45,20 +45,29 @@ body {
   flex: 1;
   margin-right: 16px;
   font-size: 18px;
+  flex-shrink: 0; /* Impede que o botão diminua */
 }
 
 .box-search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 0;
   outline: 0;
   background: #ebfffc;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .box-search button img{
-  width: 18px;
+  width: 60%; /* Mantém proporção dentro do botão */
+  height: auto;
+  object-fit: contain; /* Garante que a imagem não se deforme */
 }
 
 .clima-icon {
@@ -89,6 +98,8 @@ body {
   display: flex;
   align-items: center;
   text-align: left;
+
+  flex-wrap: nowrap;
 }
 
 .col img {
@@ -155,4 +166,68 @@ footer a {
   margin-left: 10px;
   margin-top: 15px;
   font-weight: 700;
+}
+
+@media (max-width: 768px){
+
+  .box-search {
+    flex-wrap: nowrap; /* Garante que input e botão fiquem na mesma linha */
+  }
+
+  .detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .card {
+    padding: 40px 20px;
+  }
+
+  .col {
+    flex: 1;
+  }
+
+  .col img {
+    width: 30px;
+    margin-right: 8px;
+  }
+
+  section {
+    margin: 40px 0px;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 445px) {
+  .box-search {
+    flex-wrap: nowrap; /* Garante que input e botão fiquem na mesma linha */
+  }
+
+  .box-search input {
+    font-size: 16px; /* Reduz o tamanho da fonte do input */
+    padding: 8px 20px; /* Ajusta o espaçamento interno */
+    height: 50px; /* Diminui altura para melhor encaixe */
+    margin-right: 10px; /* Reduz a margem para o botão não ser empurrado */
+  }
+
+  .box-search button {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0; /* Impede que o botão seja achatado */
+  }
+
+  .box-search button img {
+    width: 20px; /* Ajusta o tamanho da lupa */
+    height: 20px;
+  }
+
+  footer p {
+    padding: 0px 15px;
+  }
 }
